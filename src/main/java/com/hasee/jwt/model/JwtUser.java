@@ -3,10 +3,10 @@ package com.hasee.jwt.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "jwtuser")
+@Table(name = "Jwtuser")
 public class JwtUser {
     @Column(name = "Username")
-    private String userName;
+    private String username;
 
     @Column(name = "Id")
     @Id
@@ -16,11 +16,14 @@ public class JwtUser {
     @Column(name = "Role")
     private String role;
 
+    @Column(name = "Password")
+    private String password;
+
     @Column(name = "Token")
     private String token;
 
     public void setUserName(String userName) {
-        this.userName = userName;
+        this.username = userName;
     }
 
     public void setId(long id) {
@@ -32,7 +35,15 @@ public class JwtUser {
     }
 
     public String getUserName() {
-        return userName;
+        return username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public long getId() {

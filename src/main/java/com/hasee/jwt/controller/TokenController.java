@@ -24,7 +24,7 @@ public class TokenController {
     }
 
     @PostMapping
-    public String generate(@RequestBody final JwtUser jwtUser) {
+    public String saveUserAndGenerateToken(@RequestBody final JwtUser jwtUser) {
 
         String token = jwtGenerator.generate(jwtUser);
         jwtUser.setToken(token);

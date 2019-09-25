@@ -8,15 +8,16 @@ import java.util.List;
 
 public class JwtUserDetails implements UserDetails {
 
-    private String userName;
+    private String username;
+    private String password;
     private String token;
     private Long id;
     private Collection<? extends GrantedAuthority> authorities;
 
 
-    public JwtUserDetails(String userName, long id, String token, List<GrantedAuthority> grantedAuthorities) {
-
-        this.userName = userName;
+    public JwtUserDetails(String username,String password, long id, String token, List<GrantedAuthority> grantedAuthorities) {
+        this.username = username;
+        this.password = password;
         this.id = id;
         this.token= token;
         this.authorities = grantedAuthorities;
@@ -29,12 +30,12 @@ public class JwtUserDetails implements UserDetails {
 
     @Override
     public String getPassword() {
-        return null;
+        return password;
     }
 
     @Override
     public String getUsername() {
-        return userName;
+        return username;
     }
 
     @Override
@@ -59,7 +60,7 @@ public class JwtUserDetails implements UserDetails {
 
 
     public String getUserName() {
-        return userName;
+        return username;
     }
 
     public String getToken() {
