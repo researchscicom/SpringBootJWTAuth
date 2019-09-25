@@ -1,6 +1,6 @@
-package com.techprimers.security.jwtsecurity.security;
+package com.hasee.jwt.security;
 
-import com.techprimers.security.jwtsecurity.model.JwtUser;
+import com.hasee.jwt.model.JwtUser;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;

@@ -1,4 +1,4 @@
-package com.techprimers.security.jwtsecurity.model;
+package com.hasee.jwt.model;
 
 import javax.persistence.*;
 

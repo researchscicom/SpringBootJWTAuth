@@ -1,6 +1,6 @@
-package com.techprimers.security.jwtsecurity.repository;
+package com.hasee.jwt.repository;
 
-import com.techprimers.security.jwtsecurity.model.JwtUser;
+import com.hasee.jwt.model.JwtUser;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

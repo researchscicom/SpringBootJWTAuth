@@ -1,6 +1,6 @@
-package com.techprimers.security.jwtsecurity.security;
+package com.hasee.jwt.security;
 
-import com.techprimers.security.jwtsecurity.model.JwtAuthenticationToken;
+import com.hasee.jwt.model.JwtAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter;

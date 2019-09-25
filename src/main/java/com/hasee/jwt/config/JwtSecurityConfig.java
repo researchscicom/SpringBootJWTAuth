@@ -1,9 +1,9 @@
-package com.techprimers.security.jwtsecurity.config;
+package com.hasee.jwt.config;
 
-import com.techprimers.security.jwtsecurity.security.JwtAuthenticationEntryPoint;
-import com.techprimers.security.jwtsecurity.security.JwtAuthenticationProvider;
-import com.techprimers.security.jwtsecurity.security.JwtAuthenticationTokenFilter;
-import com.techprimers.security.jwtsecurity.security.JwtSuccessHandler;
+import com.hasee.jwt.security.JwtAuthenticationEntryPoint;
+import com.hasee.jwt.security.JwtAuthenticationTokenFilter;
+import com.hasee.jwt.security.JwtAuthenticationProvider;
+import com.hasee.jwt.security.JwtSuccessHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
